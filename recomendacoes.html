@@ -5,77 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recomendações de Músicas</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+
   <body>
-    <header>
-      <h1 align="center">Compartilhando Músicas</h1>
-      <ul style="list-style: none">
-        <li>
-          <a href="./index.html">Home</a>
-        </li>
-        <li>
-          <a href="./indicacoes.html">Deixe sua Recomendação</a>
-        </li>
-      </ul>
+    <!--Cabeçalho-->
+    <header class="menu">
+      <div class="logo">
+        <img src="./assets/img/icon1.png" alt="Ícone nota musical" width="50px" height="40px" />
+        <h1>Compartilhando Músicas</h1>
+        <img src="./assets/img/icon1.png" alt="Ícone nota musical" width="50px" height="40px" />
+      </div>
+
+      <!--Navbar-->
+      <nav class="navbar">
+        <ul style="list-style: none">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="#" class="active">Recomendações por Gênero</a>
+          </li>
+          <li>
+            <a href="./indicacoes.html">Deixe sua Recomendação</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
       <h2>Aqui estão algumas músicas que gosto de ouvir de acordo com cada gênero:</h2>
 
-      <h3>Country:</h3>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/11Nu1zOIpA0?controls=0&amp;start=4"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+      <div class="card">
+        <div>
+          <h3 class="card-title">Country:</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/11Nu1zOIpA0?controls=0&amp;start=4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
 
-      <h3>Eletronica:</h3>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/zXx-NLtwzmI?start=4"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+        <div>
+          <h3 class="card-title">Eletronica:</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/zXx-NLtwzmI?start=4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
 
-      <h3>Gospel:</h3>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/81GaF34veWA?start=4"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+      <div class="card">
+        <div>
+          <h3 class="card-title">Gospel:</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/81GaF34veWA?start=4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div>
+          <h3 class="card-title">Rock:</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/CxrLHIafzko?start=4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
 
-      <h3>Rock:</h3>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/CxrLHIafzko?start=4"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-
-      <h3>Pagode:</h3>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/WQyKuEsLpRY?start=4"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-    </iframe>
+      <div class="card">
+        <div>
+          <h3 class="card-title">Pagode:</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/WQyKuEsLpRY?start=4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div>
+          <h3 class="card-title">MPB:</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/6TTtZe7NPyE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
     </main>
   </body>
 </html>
