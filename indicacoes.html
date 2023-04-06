@@ -19,18 +19,18 @@
 
       <!--Navbar-->
       <nav class="navbar">
-      <ul style="list-style: none">
-        <li>
-          <a href="./index.html">Home</a>
-        </li>
-        <li>
-          <a href="./recomendacoes.html">Recomendações por Gênero</a>
-        </li>
-        <li>
-          <a href="#" class="active">Deixe sua recomendação</a>
-        </li>
-      </ul>
-    </nav>
+        <ul style="list-style: none">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./recomendacoes.html">Recomendações por Gênero</a>
+          </li>
+          <li>
+            <a href="#" class="active">Deixe sua recomendação</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!--Body-->
@@ -38,19 +38,22 @@
       <fieldset>
         <form>
           <label for="nome">Digite seu nome:</label>
-          <input type="text" name="nome" id="nome" required/>
-          <br><br>
+          <input type="text" name="nome" id="nome" onkeyup="validaNome()" required />
+          <div id="txtNome"></div>
+          <br />
 
           <label for="musica">Nome da Música:</label>
-          <input type="text" id="musica" name="musica" required>
-          <br><br>
-          
+          <input type="text" id="musica" name="musica" required onkeyup="validaMusica()" />
+          <div id="txtMusica"></div>
+          <br />
+
           <label for="artista">Artista:</label>
-          <input type="text" id="artista" name="artista" required>
-          <br><br>
+          <input type="text" id="artista" name="artista" required onkeyup="validaArtista()" />
+          <div id="txtArtista"></div>
+          <br />
 
           <label for="genero">Gênero:</label>
-          <select id="genero" name="genero" >
+          <select id="genero" name="genero">
             <option value="axe">Axé</option>
             <option value="blues">Blues</option>
             <option value="country">Country</option>
@@ -69,18 +72,24 @@
             <option value="rock">Rock</option>
             <option value="samba">Samba</option>
             <option value="sertanejo">Sertanejo</option>
-          </select><br><br>
+          </select>
+          <br />
+          <br />
 
           <label for="mensagem">Diga algo sobre a sua música:</label>
-          <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+          <textarea id="mensagem" name="mensagem" rows="4" cols="50" onkeyup="tamanhoArea()"></textarea>
+          <div id="txtMensagem"></div>
+          <br />
+          <br />
 
-   
-         <div class="botoes">
-          <input type="submit" value="Enviar" class="buttons">
-          <input type="reset" value="Limpar" class="buttons">
-        </div>
+          <div class="botoes">
+            <input type="submit" value="Enviar" class="buttons" onclick="enviar()" />
+            <input type="reset" value="Limpar" class="buttons" />
+          </div>
         </form>
       </fieldset>
     </main>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
